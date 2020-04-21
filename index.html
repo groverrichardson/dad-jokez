@@ -1,0 +1,172 @@
+<!DOCTYPE html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Dad Jokez</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="main.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <img src="" alt="" />
+        <!--[if lt IE 7]>
+            <p class="browsehappy">
+                You are using an <strong>outdated</strong> browser. Please
+                <a href="#">upgrade your browser</a> to improve your experience.
+            </p>
+        <![endif]-->
+        <div class="hero-container">
+            <section class="hero">
+                <img
+                    src="Images/Dad Jokez Logo@3x.png"
+                    alt="Dad Jokez logo."
+                    class="dad-jokez-logo"
+                />
+                <h2>
+                    Search for a topic below. Just want a random joke? Click
+                    "I'm feeling silly" for a quick joke that will make your
+                    day!
+                </h2>
+                <form class="hero-form">
+                    <input
+                        type="text"
+                        placeholder="Search Dad Jokez"
+                        class="search-input"
+                    />
+                    <button
+                        type="submit"
+                        name="search"
+                        class="submit"
+                        id="search-button"
+                    >
+                        Search
+                    </button>
+                    <button
+                        type="submit"
+                        name="feeling-silly"
+                        class="submit feeling-silly"
+                    >
+                        I'm feeling silly
+                    </button>
+                    <div id="js-error-message"></div>
+                </form>
+            </section>
+        </div>
+        <div class="sticky-search scroll-hide sticky" id="sticky-search">
+            <div class="sticky-wrapper">
+                <input
+                    type="text"
+                    placeholder="Search Dad Jokez"
+                    class="search-input-mobile"
+                />
+                <div class="mobile-button-wrapper">
+                    <button
+                        type="submit"
+                        name="search"
+                        class="submit-mobile search-mobile"
+                    >
+                        Search
+                    </button>
+                    <button
+                        type="submit"
+                        name="feeling-silly"
+                        class="submit-mobile feeling-silly-mobile"
+                    >
+                        I'm feeling silly
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="results-container hide">
+            <section class="results hide">
+                <div class="results-header-container">
+                    <h3 class="result-header">Results</h3>
+                    <p class="showing-results-for"></p>
+                </div>
+                <ul class="result-list">
+                    <li class="result">
+                        <div class="joke">
+                            My wife is really mad at the fact that I have no
+                            sense of direction. So I packed up my stuff and
+                            right.
+                        </div>
+                        <div class="rating">
+                            Rate This Joke
+                            <div class="thumbs-container">
+                                <img
+                                    src="Images/thumb-up.png"
+                                    alt="Image of a thumbs up emoji."
+                                    class="thumb greyscale"
+                                /><img
+                                    src="Images/thumb-down.png"
+                                    alt="Image of a thumbs down emoji."
+                                    class="thumb greyscale"
+                                />
+                            </div>
+                        </div>
+                    </li>
+                    <li class="result">
+                        <div class="joke">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Est velit egestas dui id ornare
+                        </div>
+                        <div class="rating">
+                            Rate This Joke
+                            <div class="thumbs-container">
+                                <img
+                                    src="Images/thumb-up.png"
+                                    alt="Image of a thumbs up emoji."
+                                    class="thumb greyscale"
+                                /><img
+                                    src="Images/thumb-down.png"
+                                    alt="Image of a thumbs down emoji."
+                                    class="thumb greyscale"
+                                />
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <!-- [Modal and Expermental Code]><div id="ex1" class="modal">
+            <div class="modal-content-wrapper">
+                <img src="Images/modal-image.png" alt="Placeholder image" class="modal-image">
+                <p class="modal-result-description">My wife is really mad at the fact that I have no sense of direction. So I packed up my stuff 
+                    and right.
+                </p>
+                <div class="social-buttons-wrapper">
+                    <button id="facebook-button social-buttons-wrapper">Share on Facebook</button><button id="twitter-button">Share on Twitter</button>
+                    <p>Rate This Joke</p>
+                    <img src="Images/Arrow Up.png" alt="Arrow Pointing Up"><img src="Images/Arrow Down.png" alt="Arrow pointing down">
+                </div>
+                <a href="#" rel="modal:close">Close</a>
+            </div>
+        </div>
+        <div class="temp-buttons">
+            <p><a href="#result-list" class="temp-button results-view">Open Results View</a></p>
+            <p><a href="#ex1" rel="modal:open" class="temp-button">Open Modal</a></p>
+        </div><-->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"
+        ></script>
+        <script src="main.js" async defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    </body>
+</html>
