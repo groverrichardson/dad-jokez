@@ -71,18 +71,6 @@ $(window).scroll(function () {
     stickySearch();
 });
 
-function stickySearch() {
-    const sticky = $('.results-container').offset();
-    console.log('window-pagey-offset', window.pageYOffset);
-    if (window.pageYOffset > $('.results-container').offset().top - 1) {
-        $('.results').css('margin-top', '150px');
-        $('#sticky-search').removeClass('scroll-hide');
-    } else {
-        $('#sticky-search').addClass('scroll-hide');
-        $('.results').css('margin-top', '0px');
-    }
-}
-
 function watchButton() {
     $('.results-view').click((event) => {
         $('div.sticky-search').toggleClass('hide');
