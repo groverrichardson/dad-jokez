@@ -232,7 +232,7 @@ h2 {
     text-transform: uppercase;
     margin: 30px 0px 0px 0px;
     color: #000;
-    font-family: "Playfair Display";
+    font-family: 'Playfair Display';
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 1.05px;
@@ -387,6 +387,7 @@ li.result {
         padding: 5px;
         font-size: 10px;
         margin-right: 0px;
+        width: -webkit-fill-available;
     }
 
     .feeling-silly {
