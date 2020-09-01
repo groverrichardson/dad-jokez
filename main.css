@@ -3,6 +3,10 @@
     font-family: Arial;
 }
 
+label {
+    display: none;
+}
+
 html {
     display: flex;
     flex-direction: column;
