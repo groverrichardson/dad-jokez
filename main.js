@@ -81,4 +81,3 @@ function watchButton() {
 $(watchButton);
 $(watchSubmit);
 $(watchMobileSubmit);
-//$(onScroll);
